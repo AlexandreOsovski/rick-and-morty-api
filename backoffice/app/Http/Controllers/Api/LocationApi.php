@@ -100,6 +100,7 @@ class LocationApi extends Controller
      * @param  \Illuminate\Http\Request  $request  Os filtros passados na requisição.
      * @return \Illuminate\Http\JsonResponse
      */
+
     public function getFiltersLocations(Request $request)
     {
         $url = env('RICK_MORTY_API_URL') . 'location';
