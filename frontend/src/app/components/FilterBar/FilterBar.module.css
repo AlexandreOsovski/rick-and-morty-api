@@ -1,0 +1,46 @@
+.filterBarContainer {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  /* padding: 1rem; */
+  /* width: 100vw; */
+  border-radius: 0.5rem;
+}
+
+@media (min-width: 700px) {
+  .filterBarContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100%; */
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .input,
+  .select {
+    width: 80vw !important;
+  }
+}
+
+.input,
+.select {
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #1a1b1f;
+  color: #d1d5db;
+  transition: outline 0.2s;
+}
+
+.input:focus,
+.select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px red;
+}
+
+.placeholder {
+  color: #9ca3af;
+}

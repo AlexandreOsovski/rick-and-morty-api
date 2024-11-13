@@ -1,0 +1,80 @@
+.cardWrapper {
+  display: flex;
+  max-width: 20rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: rgba(255, 0, 0, 0.6) 0px 0px 5px 0px,
+    rgba(255, 0, 0, 0.4) 5px 5px 15px 0px;
+  margin: 1rem;
+  flex-direction: column;
+  transition: box-shadow 0.3s ease;
+}
+
+.cardImageWrapper {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardContentWrapper {
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+.section {
+  margin-bottom: 1rem;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.statusIcon {
+  width: 10px;
+  height: 10px;
+  margin-right: 0.5rem;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.textGray {
+  color: white;
+}
+
+.externalLink {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.cardWrapper:hover {
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 6px 12px;
+  transform: translateY(-5px);
+}
+
+.statusAlive {
+  color: green;
+}
+
+.statusDead {
+  color: red;
+}
+
+.statusUnknown {
+  color: gray;
+}

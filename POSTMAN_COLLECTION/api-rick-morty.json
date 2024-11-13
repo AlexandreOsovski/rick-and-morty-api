@@ -1,0 +1,607 @@
+{
+  "info": {
+    "name": "api-rick-morty",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "bruno",
+      "event": []
+    },
+    {
+      "name": "Characters",
+      "item": [
+        {
+          "name": "Get All Characters",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": null,
+            "description": "",
+            "url": {
+              "raw": "http://localhost:8000/api/characters",
+              "protocol": "http",
+              "host": [
+                "localhost:8000"
+              ],
+              "path": [
+                "api",
+                "characters"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Get Unique Character",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": null,
+            "description": "",
+            "url": {
+              "raw": "http://localhost:8000/api/characters/id=1",
+              "protocol": "http",
+              "host": [
+                "localhost:8000"
+              ],
+              "path": [
+                "api",
+                "characters",
+                "id=1"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Get Multiple Character",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": null,
+            "description": "",
+            "url": {
+              "raw": "Http://localhost:8000/api/characters/multiple/1,2,34",
+              "protocol": "Http",
+              "host": [
+                "localhost:8000"
+              ],
+              "path": [
+                "api",
+                "characters",
+                "multiple",
+                "1,2,34"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Filter",
+          "item": [
+            {
+              "name": "Name",
+              "event": [],
+              "request": {
+                "method": "GET",
+                "header": [],
+                "auth": null,
+                "description": "",
+                "url": {
+                  "raw": "http://localhost:8000/api/characters/filter?name=Rick",
+                  "protocol": "http",
+                  "host": [
+                    "localhost:8000"
+                  ],
+                  "path": [
+                    "api",
+                    "characters",
+                    "filter"
+                  ],
+                  "query": [
+                    {
+                      "key": "name",
+                      "value": "Rick"
+                    }
+                  ],
+                  "variable": []
+                }
+              }
+            },
+            {
+              "name": "Status",
+              "event": [],
+              "request": {
+                "method": "GET",
+                "header": [],
+                "auth": null,
+                "description": "",
+                "url": {
+                  "raw": "http://localhost:8000/api/characters/filter?status=Alive",
+                  "protocol": "http",
+                  "host": [
+                    "localhost:8000"
+                  ],
+                  "path": [
+                    "api",
+                    "characters",
+                    "filter"
+                  ],
+                  "query": [
+                    {
+                      "key": "status",
+                      "value": "Alive"
+                    }
+                  ],
+                  "variable": []
+                }
+              }
+            },
+            {
+              "name": "Species",
+              "event": [],
+              "request": {
+                "method": "GET",
+                "header": [],
+                "auth": null,
+                "description": "",
+                "url": {
+                  "raw": "http://localhost:8000/api/characters/filter?specie=Human",
+                  "protocol": "http",
+                  "host": [
+                    "localhost:8000"
+                  ],
+                  "path": [
+                    "api",
+                    "characters",
+                    "filter"
+                  ],
+                  "query": [
+                    {
+                      "key": "specie",
+                      "value": "Human"
+                    }
+                  ],
+                  "variable": []
+                }
+              }
+            },
+            {
+              "name": "Type",
+              "event": [],
+              "request": {
+                "method": "GET",
+                "header": [],
+                "auth": null,
+                "description": "",
+                "url": {
+                  "raw": "http://localhost:8000/api/characters/filter?type=Parasite",
+                  "protocol": "http",
+                  "host": [
+                    "localhost:8000"
+                  ],
+                  "path": [
+                    "api",
+                    "characters",
+                    "filter"
+                  ],
+                  "query": [
+                    {
+                      "key": "type",
+                      "value": "Parasite"
+                    }
+                  ],
+                  "variable": []
+                }
+              }
+            },
+            {
+              "name": "Gender",
+              "event": [],
+              "request": {
+                "method": "GET",
+                "header": [],
+                "auth": null,
+                "description": "",
+                "url": {
+                  "raw": "http://localhost:8000/api/characters/filter?gender=Male",
+                  "protocol": "http",
+                  "host": [
+                    "localhost:8000"
+                  ],
+                  "path": [
+                    "api",
+                    "characters",
+                    "filter"
+                  ],
+                  "query": [
+                    {
+                      "key": "gender",
+                      "value": "Male"
+                    }
+                  ],
+                  "variable": []
+                }
+              }
+            },
+            {
+              "name": "Quantity Pages",
+              "event": [],
+              "request": {
+                "method": "GET",
+                "header": [],
+                "auth": null,
+                "description": "",
+                "url": {
+                  "raw": "http://localhost:8000/api/characters/filter?qtyPage=40",
+                  "protocol": "http",
+                  "host": [
+                    "localhost:8000"
+                  ],
+                  "path": [
+                    "api",
+                    "characters",
+                    "filter"
+                  ],
+                  "query": [
+                    {
+                      "key": "qtyPage",
+                      "value": "40"
+                    }
+                  ],
+                  "variable": []
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Episodes",
+      "item": [
+        {
+          "name": "Filter",
+          "item": [
+            {
+              "name": "Name",
+              "event": [],
+              "request": {
+                "method": "GET",
+                "header": [],
+                "auth": null,
+                "description": "",
+                "url": {
+                  "raw": "http://localhost:8000/api/episodes/filter?name=Pilot",
+                  "protocol": "http",
+                  "host": [
+                    "localhost:8000"
+                  ],
+                  "path": [
+                    "api",
+                    "episodes",
+                    "filter"
+                  ],
+                  "query": [
+                    {
+                      "key": "name",
+                      "value": "Pilot"
+                    }
+                  ],
+                  "variable": []
+                }
+              }
+            },
+            {
+              "name": "Air Date",
+              "event": [],
+              "request": {
+                "method": "GET",
+                "header": [],
+                "auth": null,
+                "description": "",
+                "url": {
+                  "raw": "http://localhost:8000/api/episodes/filter?air_date=2023-10-01",
+                  "protocol": "http",
+                  "host": [
+                    "localhost:8000"
+                  ],
+                  "path": [
+                    "api",
+                    "episodes",
+                    "filter"
+                  ],
+                  "query": [
+                    {
+                      "key": "air_date",
+                      "value": "2023-10-01"
+                    }
+                  ],
+                  "variable": []
+                }
+              }
+            },
+            {
+              "name": "Episode",
+              "event": [],
+              "request": {
+                "method": "GET",
+                "header": [],
+                "auth": null,
+                "description": "",
+                "url": {
+                  "raw": "http://localhost:8000/api/episodes/filter?episode=S01EP3",
+                  "protocol": "http",
+                  "host": [
+                    "localhost:8000"
+                  ],
+                  "path": [
+                    "api",
+                    "episodes",
+                    "filter"
+                  ],
+                  "query": [
+                    {
+                      "key": "episode",
+                      "value": "S01EP3"
+                    }
+                  ],
+                  "variable": []
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "Get All Episodes",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": null,
+            "description": "",
+            "url": {
+              "raw": "http://localhost:8000/api/episodes",
+              "protocol": "http",
+              "host": [
+                "localhost:8000"
+              ],
+              "path": [
+                "api",
+                "episodes"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Get Unique Episode",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": null,
+            "description": "",
+            "url": {
+              "raw": "http://localhost:8000/api/episodes/id=1",
+              "protocol": "http",
+              "host": [
+                "localhost:8000"
+              ],
+              "path": [
+                "api",
+                "episodes",
+                "id=1"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Get Multiples Episodes",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": null,
+            "description": "",
+            "url": {
+              "raw": "http://localhost:8000/api/episodes/multiple/1,2,32",
+              "protocol": "http",
+              "host": [
+                "localhost:8000"
+              ],
+              "path": [
+                "api",
+                "episodes",
+                "multiple",
+                "1,2,32"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Locations",
+      "item": [
+        {
+          "name": "Filter Locations",
+          "item": [
+            {
+              "name": "Name",
+              "event": [],
+              "request": {
+                "method": "GET",
+                "header": [],
+                "auth": null,
+                "description": "",
+                "url": {
+                  "raw": "http://localhost:8000/api/locations/filter?name=Earth (C-137)",
+                  "protocol": "http",
+                  "host": [
+                    "localhost:8000"
+                  ],
+                  "path": [
+                    "api",
+                    "locations",
+                    "filter"
+                  ],
+                  "query": [
+                    {
+                      "key": "name",
+                      "value": "Earth (C-137)"
+                    }
+                  ],
+                  "variable": []
+                }
+              }
+            },
+            {
+              "name": "Dimensions",
+              "event": [],
+              "request": {
+                "method": "GET",
+                "header": [],
+                "auth": null,
+                "description": "",
+                "url": {
+                  "raw": "http://localhost:8000/api/locations/filter?dimension=Dimension C-137",
+                  "protocol": "http",
+                  "host": [
+                    "localhost:8000"
+                  ],
+                  "path": [
+                    "api",
+                    "locations",
+                    "filter"
+                  ],
+                  "query": [
+                    {
+                      "key": "dimension",
+                      "value": "Dimension C-137"
+                    }
+                  ],
+                  "variable": []
+                }
+              }
+            },
+            {
+              "name": "Type",
+              "event": [],
+              "request": {
+                "method": "GET",
+                "header": [],
+                "auth": null,
+                "description": "",
+                "url": {
+                  "raw": "http://localhost:8000/api/locations/filter?type=Planet",
+                  "protocol": "http",
+                  "host": [
+                    "localhost:8000"
+                  ],
+                  "path": [
+                    "api",
+                    "locations",
+                    "filter"
+                  ],
+                  "query": [
+                    {
+                      "key": "type",
+                      "value": "Planet"
+                    }
+                  ],
+                  "variable": []
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "Get All Locations",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": null,
+            "description": "",
+            "url": {
+              "raw": "http://localhost:8000/api/locations",
+              "protocol": "http",
+              "host": [
+                "localhost:8000"
+              ],
+              "path": [
+                "api",
+                "locations"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Get Unique Location",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": null,
+            "description": "",
+            "url": {
+              "raw": "http://localhost:8000/api/locations/id=1",
+              "protocol": "http",
+              "host": [
+                "localhost:8000"
+              ],
+              "path": [
+                "api",
+                "locations",
+                "id=1"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Get Multiples Location",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": null,
+            "description": "",
+            "url": {
+              "raw": "http://localhost:8000/api/locations/multiple/1,2,32",
+              "protocol": "http",
+              "host": [
+                "localhost:8000"
+              ],
+              "path": [
+                "api",
+                "locations",
+                "multiple",
+                "1,2,32"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "variable": []
+}
